@@ -1,6 +1,5 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Globe, ShieldHeart, Lightbulb } from "lucide-react";
+import { BookOpen, Globe, Shield, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -71,7 +70,7 @@ const ProgramsSection = () => {
           <ProgramCard 
             title="Humanitarian Relief" 
             description="Providing emergency assistance, healthcare services, and long-term recovery support to communities affected by natural disasters and conflicts."
-            icon={<ShieldHeart className="text-pursuva-purple w-6 h-6" />}
+            icon={<Shield className="text-pursuva-purple w-6 h-6" />}
             color="text-pursuva-purple border-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-colors"
             bgColor="bg-pursuva-purple/10"
           />
