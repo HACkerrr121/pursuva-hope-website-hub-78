@@ -16,7 +16,7 @@ interface ContactInfo {
 const ContactInfoItem = ({ icon, title, details, link }: ContactInfo) => {
   return (
     <div className="flex items-start">
-      <div className="bg-pursuva-teal/10 p-3 rounded-full mr-4">
+      <div className="bg-pursuva-blue/10 p-3 rounded-md mr-4">
         {icon}
       </div>
       <div>
@@ -72,57 +72,57 @@ const ContactSection = () => {
 
   const contactInfo: ContactInfo[] = [
     {
-      icon: <Mail className="text-pursuva-teal" />,
+      icon: <Mail className="text-pursuva-blue" />,
       title: "Email Us",
       details: "info@pursuva.org",
       link: "mailto:info@pursuva.org"
     },
     {
-      icon: <Phone className="text-pursuva-teal" />,
+      icon: <Phone className="text-pursuva-blue" />,
       title: "Call Us",
       details: "+1 (555) 123-4567",
       link: "tel:+15551234567"
     },
     {
-      icon: <MapPin className="text-pursuva-teal" />,
+      icon: <MapPin className="text-pursuva-blue" />,
       title: "Visit Us",
-      details: "123 Hope Street, New York, NY 10001"
+      details: "123 Learning Drive, Boston, MA 02115"
     }
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-          <div className="w-20 h-1 bg-gradient mx-auto mb-8"></div>
+          <div className="w-20 h-1 bg-gradient mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Have questions or want to get involved? Reach out to us and we'll get back to you as soon as possible.
+            Have questions about our courses or interested in tutoring? Get in touch with us and we'll help you get started.
           </p>
         </div>
         
-        <div className="lg:flex gap-12 items-start">
-          <div className="lg:w-1/3 mb-12 lg:mb-0">
-            <div className="space-y-8">
+        <div className="lg:flex gap-8 items-start">
+          <div className="lg:w-1/3 mb-8 lg:mb-0">
+            <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <ContactInfoItem key={index} {...info} />
               ))}
               
               <div className="pt-4">
-                <h4 className="font-semibold text-lg mb-3">Follow Us</h4>
+                <h4 className="font-semibold text-lg mb-3">Connect With Us</h4>
                 <div className="flex space-x-4">
                   {['facebook', 'twitter', 'instagram', 'linkedin'].map((platform) => (
                     <a 
                       key={platform} 
                       href={`#${platform}`} 
-                      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-pursuva-blue hover:text-white transition-colors"
+                      className="w-10 h-10 rounded-md bg-gray-100 flex items-center justify-center hover:bg-pursuva-blue hover:text-white transition-colors"
                       aria-label={`Follow us on ${platform}`}
                     >
                       <img 
                         src={`https://api.iconify.design/lucide/${platform}.svg`} 
                         alt={platform} 
-                        width="20" 
-                        height="20" 
+                        width="18" 
+                        height="18" 
                       />
                     </a>
                   ))}
@@ -132,10 +132,10 @@ const ContactSection = () => {
           </div>
           
           <div className="lg:w-2/3">
-            <form onSubmit={handleSubmit} className="bg-gray-50 p-8 rounded-lg shadow-sm">
+            <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
               
-              <div className="grid gap-6 mb-6 md:grid-cols-2">
+              <div className="grid gap-4 mb-4 md:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Your Name
@@ -166,7 +166,7 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <div className="mb-6">
+              <div className="mb-4">
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                   Subject
                 </label>
@@ -175,12 +175,12 @@ const ContactSection = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="How can we help you?"
+                  placeholder="Course Inquiry"
                   required
                 />
               </div>
               
-              <div className="mb-6">
+              <div className="mb-4">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                   Message
                 </label>
@@ -189,15 +189,15 @@ const ContactSection = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us how we can help..."
-                  rows={5}
+                  placeholder="I'm interested in learning more about..."
+                  rows={4}
                   required
                 />
               </div>
               
               <Button 
                 type="submit" 
-                className="bg-gradient hover:opacity-90 w-full" 
+                className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white w-full" 
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

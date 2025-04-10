@@ -27,18 +27,18 @@ const Navbar = () => {
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+      isScrolled ? "bg-white shadow-sm py-2" : "bg-transparent py-4"
     )}>
       <div className="container px-4 mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/4038fe81-8fa7-47c8-9461-c7da735e5ca2.png" 
+            src="/lovable-uploads/802db8de-7a0a-4d81-887c-b28d6e701edb.png" 
             alt="Pursuva Logo" 
-            className="h-10 w-auto"
+            className="h-9 w-auto"
           />
           <span className={cn(
             "ml-2 text-xl font-semibold transition-colors",
-            isScrolled ? "text-gray-800" : "text-white"
+            isScrolled ? "text-gray-800" : "text-gray-800"
           )}>
             Pursuva
           </span>
@@ -48,36 +48,36 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <a href="#about" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
-            isScrolled ? "text-gray-700" : "text-white"
+            "text-gray-700"
           )}>
             About
           </a>
           <a href="#programs" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
-            isScrolled ? "text-gray-700" : "text-white"
+            "text-gray-700"
           )}>
-            Programs
+            Courses
           </a>
           <a href="#impact" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
-            isScrolled ? "text-gray-700" : "text-white"
+            "text-gray-700"
           )}>
-            Impact
+            Approach
           </a>
           <a href="#team" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
-            isScrolled ? "text-gray-700" : "text-white"
+            "text-gray-700"
           )}>
             Team
           </a>
           <a href="#contact" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
-            isScrolled ? "text-gray-700" : "text-white"
+            "text-gray-700"
           )}>
             Contact
           </a>
-          <Button className="bg-gradient hover:opacity-90 transition-opacity">
-            Donate
+          <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white">
+            Enroll Now
           </Button>
         </nav>
 
@@ -89,26 +89,26 @@ const Navbar = () => {
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
-            <X className={isScrolled ? "text-gray-800" : "text-white"} />
+            <X className="text-gray-800" />
           ) : (
-            <Menu className={isScrolled ? "text-gray-800" : "text-white"} />
+            <Menu className="text-gray-800" />
           )}
         </Button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white shadow-md">
           <div className="container px-4 mx-auto py-4">
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-3">
               <a href="#about" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 About
               </a>
               <a href="#programs" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
-                Programs
+                Courses
               </a>
               <a href="#impact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
-                Impact
+                Approach
               </a>
               <a href="#team" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Team
@@ -116,8 +116,8 @@ const Navbar = () => {
               <a href="#contact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Contact
               </a>
-              <Button className="bg-gradient hover:opacity-90 transition-opacity w-full">
-                Donate
+              <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white w-full">
+                Enroll Now
               </Button>
             </nav>
           </div>
