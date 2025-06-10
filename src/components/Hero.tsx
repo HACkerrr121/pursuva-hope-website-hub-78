@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -29,18 +30,22 @@ const Hero = () => {
             Quality courses and personalized tutoring in Python, Java, Mathematics, and test preparation for students of all backgrounds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-pursuva-blue text-white hover:bg-pursuva-blue/90 transition-all">
-              Explore Our Courses
-            </Button>
-            <Button size="lg" variant="outline" className="border-pursuva-purple text-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-all">
-              Meet Our Tutors
-            </Button>
+            <Link to="/programs">
+              <Button size="lg" className="bg-pursuva-blue text-white hover:bg-pursuva-blue/90 transition-all">
+                Explore Our Courses
+              </Button>
+            </Link>
+            <Link to="/team">
+              <Button size="lg" variant="outline" className="border-pursuva-purple text-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-all">
+                Meet Our Tutors
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
       
       <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20 animate-bounce">
-        <a href="#about" className="text-gray-700">
+        <Link to="/about" className="text-gray-700">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="24" 
@@ -55,7 +60,7 @@ const Hero = () => {
           >
             <path d="m6 9 6 6 6-6"/>
           </svg>
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -30,7 +31,7 @@ const Navbar = () => {
       isScrolled ? "bg-white shadow-sm py-2" : "bg-transparent py-4"
     )}>
       <div className="container px-4 mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/802db8de-7a0a-4d81-887c-b28d6e701edb.png" 
             alt="Pursuva Logo" 
@@ -42,40 +43,40 @@ const Navbar = () => {
           )}>
             Pursuva
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#about" className={cn(
+          <Link to="/about" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
             "text-gray-700"
           )}>
             About
-          </a>
-          <a href="#programs" className={cn(
+          </Link>
+          <Link to="/programs" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
             "text-gray-700"
           )}>
             Courses
-          </a>
-          <a href="#impact" className={cn(
+          </Link>
+          <Link to="/impact" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
             "text-gray-700"
           )}>
             Approach
-          </a>
-          <a href="#team" className={cn(
+          </Link>
+          <Link to="/team" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
             "text-gray-700"
           )}>
             Team
-          </a>
-          <a href="#contact" className={cn(
+          </Link>
+          <Link to="/contact" className={cn(
             "transition-colors hover:text-pursuva-blue font-medium",
             "text-gray-700"
           )}>
             Contact
-          </a>
+          </Link>
           <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white">
             Enroll Now
           </Button>
@@ -101,21 +102,21 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-md">
           <div className="container px-4 mx-auto py-4">
             <nav className="flex flex-col space-y-3">
-              <a href="#about" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
+              <Link to="/about" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 About
-              </a>
-              <a href="#programs" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
+              </Link>
+              <Link to="/programs" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Courses
-              </a>
-              <a href="#impact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
+              </Link>
+              <Link to="/impact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Approach
-              </a>
-              <a href="#team" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
+              </Link>
+              <Link to="/team" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Team
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
+              </Link>
+              <Link to="/contact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Contact
-              </a>
+              </Link>
               <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white w-full">
                 Enroll Now
               </Button>
