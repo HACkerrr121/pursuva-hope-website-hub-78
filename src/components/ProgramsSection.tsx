@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen, Code, GraduationCap, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
 
 interface CourseCardProps {
   title: string;
@@ -10,9 +11,18 @@ interface CourseCardProps {
   icon: React.ReactNode;
   color: string;
   bgColor: string;
+  navigateTo?: string;
 }
 
-const CourseCard = ({ title, description, icon, color, bgColor }: CourseCardProps) => {
+const CourseCard = ({ title, description, icon, color, bgColor, navigateTo }: CourseCardProps) => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    if (navigateTo) {
+      navigate(navigateTo);
+    }
+  };
+
   return (
     <Card className="border-none shadow-md hover:shadow-lg transition-shadow overflow-hidden group h-full">
       <CardContent className="p-6 flex flex-col h-full">
@@ -28,10 +38,14 @@ const CourseCard = ({ title, description, icon, color, bgColor }: CourseCardProp
         <p className="text-gray-700 mb-6 flex-grow">
           {description}
         </p>
-        <Button variant="ghost" className={cn(
-          "mt-auto border",
-          color
-        )}>
+        <Button 
+          variant="ghost" 
+          className={cn(
+            "mt-auto border",
+            color
+          )}
+          onClick={handleLearnMore}
+        >
           Learn More
         </Button>
       </CardContent>
@@ -58,6 +72,7 @@ const ProgramsSection = () => {
             icon={<Code className="text-pursuva-blue w-6 h-6" />}
             color="text-pursuva-blue border-pursuva-blue hover:bg-pursuva-blue hover:text-white transition-colors"
             bgColor="bg-pursuva-blue/10"
+            navigateTo="/programs/python"
           />
           
           <CourseCard 
@@ -66,6 +81,7 @@ const ProgramsSection = () => {
             icon={<Code className="text-pursuva-teal w-6 h-6" />}
             color="text-pursuva-teal border-pursuva-teal hover:bg-pursuva-teal hover:text-white transition-colors"
             bgColor="bg-pursuva-teal/10"
+            navigateTo="/programs/java"
           />
           
           <CourseCard 
