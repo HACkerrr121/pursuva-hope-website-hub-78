@@ -1,5 +1,6 @@
 
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,6 +21,11 @@ const Footer = () => {
             <p className="text-gray-600 mb-4">
               An educational non-profit providing quality courses and tutoring in programming, mathematics, and test preparation.
             </p>
+            <div className="mb-4">
+              <p className="text-gray-600">
+                Email: <a href="mailto:pursuvaedu@gmail.com" className="text-pursuva-blue hover:underline">pursuvaedu@gmail.com</a>
+              </p>
+            </div>
             <div className="flex space-x-3">
               {['facebook', 'twitter', 'instagram', 'linkedin'].map((platform) => (
                 <a 
@@ -43,48 +49,138 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Courses</h3>
             <ul className="space-y-2">
-              {['Python Programming', 'Java Development', 'Mathematics', 'Data Structures', 'Algorithms', 'Web Development'].map((link) => (
-                <li key={link}>
-                  <a 
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} 
-                    className="text-gray-600 hover:text-pursuva-blue transition-colors"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link to="/programs/python" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Python Programming
+                </Link>
+              </li>
+              <li>
+                <Link to="/programs/java" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Java Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/programs/mathematics" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Mathematics
+                </Link>
+              </li>
+              <li>
+                <Link to="/programs/test-prep" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Test Preparation
+                </Link>
+              </li>
+              <li>
+                <a href="#data-structures" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Data Structures
+                </a>
+              </li>
+              <li>
+                <a href="#algorithms" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Algorithms
+                </a>
+              </li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Tutoring</h3>
             <ul className="space-y-2">
-              {['Python', 'Java', 'SAT/ACT Prep', 'Coding Olympiads', 'Physics', 'AP Courses', 'College Applications'].map((link) => (
-                <li key={link}>
-                  <a 
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} 
-                    className="text-gray-600 hover:text-pursuva-blue transition-colors"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-pursuva-blue transition-colors"
+                >
+                  Python Tutoring
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-pursuva-blue transition-colors"
+                >
+                  Java Tutoring
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-pursuva-blue transition-colors"
+                >
+                  SAT/ACT Prep
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-pursuva-blue transition-colors"
+                >
+                  Coding Olympiads
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-pursuva-blue transition-colors"
+                >
+                  Physics
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-pursuva-blue transition-colors"
+                >
+                  AP Courses
+                </a>
+              </li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              {['Blog', 'Tutorials', 'Practice Problems', 'Learning Paths', 'FAQs', 'Student Portal', 'Career Guidance'].map((link) => (
-                <li key={link}>
-                  <a 
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} 
-                    className="text-gray-600 hover:text-pursuva-blue transition-colors"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link to="/about" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/programs" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  All Programs
+                </Link>
+              </li>
+              <li>
+                <Link to="/team" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link to="/impact" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Our Impact
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <a href="#faqs" className="text-gray-600 hover:text-pursuva-blue transition-colors">
+                  FAQs
+                </a>
+              </li>
             </ul>
           </div>
         </div>

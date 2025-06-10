@@ -11,12 +11,12 @@ const JavaCourse = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleTutoringClick = () => {
-    window.open("https://meet.google.com/miy-wkbc-ohc", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview", "_blank");
     setIsModalOpen(false);
   };
 
   const handleTeachingClick = () => {
-    window.open("https://meet.google.com/miy-wkbc-ohc", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSez6GFk-JoWeD_WPGyGXTR2jwdhXV8C8U-dQQJVxu1bnDRZZg/viewform?usp=preview", "_blank");
     setIsModalOpen(false);
   };
 

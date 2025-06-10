@@ -90,6 +90,7 @@ const ProgramsSection = () => {
             icon={<Calculator className="text-pursuva-purple w-6 h-6" />}
             color="text-pursuva-purple border-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-colors"
             bgColor="bg-pursuva-purple/10"
+            navigateTo="/programs/mathematics"
           />
           
           <CourseCard 
@@ -98,6 +99,7 @@ const ProgramsSection = () => {
             icon={<GraduationCap className="text-pursuva-orange w-6 h-6" />}
             color="text-pursuva-orange border-pursuva-orange hover:bg-pursuva-orange hover:text-white transition-colors"
             bgColor="bg-pursuva-orange/10"
+            navigateTo="/programs/test-prep"
           />
         </div>
         
@@ -107,7 +109,11 @@ const ProgramsSection = () => {
             Our tutoring services offer one-on-one guidance in Python, Java, SAT/ACT preparation, Coding Olympiads, and Physics.
             Contact us to schedule a session with our expert tutors.
           </p>
-          <Button variant="outline" className="text-pursuva-blue border-pursuva-blue hover:bg-pursuva-blue hover:text-white transition-colors">
+          <Button 
+            variant="outline" 
+            className="text-pursuva-blue border-pursuva-blue hover:bg-pursuva-blue hover:text-white transition-colors"
+            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview", "_blank")}
+          >
             Schedule Tutoring
           </Button>
         </div>

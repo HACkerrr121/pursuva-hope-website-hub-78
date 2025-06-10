@@ -4,10 +4,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Code, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
+import { GraduationCap, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
 import { useState } from "react";
 
-const PythonCourse = () => {
+const TestPrepCourse = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleTutoringClick = () => {
@@ -28,12 +28,12 @@ const PythonCourse = () => {
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="text-center mb-12">
-            <div className="w-16 h-16 bg-pursuva-blue/10 rounded-lg flex items-center justify-center mx-auto mb-6">
-              <Code className="text-pursuva-blue w-8 h-8" />
+            <div className="w-16 h-16 bg-pursuva-orange/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <GraduationCap className="text-pursuva-orange w-8 h-8" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Python Programming</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Test Preparation</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Master Python programming from fundamentals to advanced applications. Build real-world projects and develop the skills needed for modern software development.
+              Excel in standardized tests and competitive exams. Get personalized coaching for SAT/ACT, coding olympiads, and physics competitions.
             </p>
           </div>
 
@@ -41,33 +41,33 @@ const PythonCourse = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <Card className="text-center">
               <CardContent className="p-6">
-                <Clock className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
+                <Clock className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Duration</h3>
-                <p className="text-gray-700">12 weeks</p>
+                <p className="text-gray-700">8-16 weeks</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
               <CardContent className="p-6">
-                <Users className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Class Size</h3>
-                <p className="text-gray-700">Max 15 students</p>
+                <Users className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
+                <h3 className="font-bold mb-2">Format</h3>
+                <p className="text-gray-700">1-on-1 & Groups</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
               <CardContent className="p-6">
-                <BookOpen className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Level</h3>
-                <p className="text-gray-700">Beginner to Intermediate</p>
+                <BookOpen className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
+                <h3 className="font-bold mb-2">Tests</h3>
+                <p className="text-gray-700">Multiple exams</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
               <CardContent className="p-6">
-                <Code className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Projects</h3>
-                <p className="text-gray-700">5+ hands-on projects</p>
+                <GraduationCap className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
+                <h3 className="font-bold mb-2">Success Rate</h3>
+                <p className="text-gray-700">95%+ improvement</p>
               </CardContent>
             </Card>
           </div>
@@ -75,71 +75,71 @@ const PythonCourse = () => {
           {/* Course Description */}
           <div className="grid lg:grid-cols-2 gap-12 mb-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6">What You'll Learn</h2>
+              <h2 className="text-3xl font-bold mb-6">What We Cover</h2>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <CheckCircle className="text-pursuva-orange w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Python Fundamentals</h4>
-                    <p className="text-gray-700">Variables, data types, control structures, and functions</p>
+                    <h4 className="font-semibold">SAT/ACT Preparation</h4>
+                    <p className="text-gray-700">Comprehensive prep for math, reading, writing, and science sections</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <CheckCircle className="text-pursuva-orange w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Object-Oriented Programming</h4>
-                    <p className="text-gray-700">Classes, inheritance, polymorphism, and encapsulation</p>
+                    <h4 className="font-semibold">Coding Olympiads</h4>
+                    <p className="text-gray-700">USACO, IOI, and other competitive programming contests</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <CheckCircle className="text-pursuva-orange w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Data Structures & Algorithms</h4>
-                    <p className="text-gray-700">Lists, dictionaries, sets, and algorithm optimization</p>
+                    <h4 className="font-semibold">Physics Competitions</h4>
+                    <p className="text-gray-700">Physics olympiad and advanced physics problem solving</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <CheckCircle className="text-pursuva-orange w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Web Development</h4>
-                    <p className="text-gray-700">Flask/Django basics and API development</p>
+                    <h4 className="font-semibold">AP Course Preparation</h4>
+                    <p className="text-gray-700">Advanced Placement exams in various subjects</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <CheckCircle className="text-pursuva-orange w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Data Analysis</h4>
-                    <p className="text-gray-700">NumPy, Pandas, and data visualization with Matplotlib</p>
+                    <h4 className="font-semibold">Test Strategies</h4>
+                    <p className="text-gray-700">Time management, question analysis, and optimal approaches</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div>
-              <h2 className="text-3xl font-bold mb-6">Course Projects</h2>
+              <h2 className="text-3xl font-bold mb-6">Our Approach</h2>
               <div className="space-y-6">
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Calculator Application</h4>
-                    <p className="text-gray-700">Build a GUI calculator using Tkinter with advanced mathematical functions.</p>
+                    <h4 className="font-bold mb-2">Diagnostic Assessment</h4>
+                    <p className="text-gray-700">Identify strengths and weaknesses with comprehensive initial testing.</p>
                   </CardContent>
                 </Card>
                 
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Web Scraper</h4>
-                    <p className="text-gray-700">Create a web scraping tool to collect and analyze data from websites.</p>
+                    <h4 className="font-bold mb-2">Personalized Study Plan</h4>
+                    <p className="text-gray-700">Custom curriculum tailored to your specific needs and timeline.</p>
                   </CardContent>
                 </Card>
                 
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Personal Finance Tracker</h4>
-                    <p className="text-gray-700">Develop a complete application to track expenses and generate financial reports.</p>
+                    <h4 className="font-bold mb-2">Practice & Review</h4>
+                    <p className="text-gray-700">Regular practice tests with detailed analysis and improvement strategies.</p>
                   </CardContent>
                 </Card>
               </div>
@@ -148,13 +148,13 @@ const PythonCourse = () => {
 
           {/* Enrollment Section */}
           <div className="text-center bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl font-bold mb-4">Ready to Start Learning Python?</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Ace Your Tests?</h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Join our comprehensive Python programming course and gain the skills you need to build amazing applications.
+              Join our test preparation program and achieve your target scores with expert guidance and proven strategies.
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90">
+                <Button className="bg-pursuva-orange hover:bg-pursuva-orange/90">
                   Enroll Now
                 </Button>
               </DialogTrigger>
@@ -165,14 +165,14 @@ const PythonCourse = () => {
                 <div className="space-y-4 pt-4">
                   <Button 
                     onClick={handleTutoringClick}
-                    className="w-full bg-pursuva-blue hover:bg-pursuva-blue/90"
+                    className="w-full bg-pursuva-orange hover:bg-pursuva-orange/90"
                   >
                     One-on-One Tutoring
                   </Button>
                   <Button 
                     onClick={handleTeachingClick}
                     variant="outline" 
-                    className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
+                    className="w-full border-pursuva-orange text-pursuva-orange hover:bg-pursuva-orange hover:text-white"
                   >
                     Group Teaching
                   </Button>
@@ -188,4 +188,4 @@ const PythonCourse = () => {
   );
 };
 
-export default PythonCourse;
+export default TestPrepCourse;

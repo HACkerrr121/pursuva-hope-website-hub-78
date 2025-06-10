@@ -9,6 +9,8 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import PythonCourse from "./pages/PythonCourse";
 import JavaCourse from "./pages/JavaCourse";
+import MathCourse from "./pages/MathCourse";
+import TestPrepCourse from "./pages/TestPrepCourse";
 import Impact from "./pages/Impact";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/programs/python" element={<PythonCourse />} />
           <Route path="/programs/java" element={<JavaCourse />} />
+          <Route path="/programs/mathematics" element={<MathCourse />} />
+          <Route path="/programs/test-prep" element={<TestPrepCourse />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
