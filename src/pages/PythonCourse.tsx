@@ -3,9 +3,23 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Code, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
+import { useState } from "react";
 
 const PythonCourse = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleTutoringClick = () => {
+    window.open("https://meet.google.com/miy-wkbc-ohc", "_blank");
+    setIsModalOpen(false);
+  };
+
+  const handleTeachingClick = () => {
+    window.open("https://meet.google.com/miy-wkbc-ohc", "_blank");
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -138,14 +152,33 @@ const PythonCourse = () => {
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Join our comprehensive Python programming course and gain the skills you need to build amazing applications.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90">
-                Enroll Now
-              </Button>
-              <Button variant="outline" className="border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white">
-                Schedule a Demo
-              </Button>
-            </div>
+            <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+              <DialogTrigger asChild>
+                <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90">
+                  Enroll Now
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle>Choose Your Learning Format</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-4 pt-4">
+                  <Button 
+                    onClick={handleTutoringClick}
+                    className="w-full bg-pursuva-blue hover:bg-pursuva-blue/90"
+                  >
+                    One-on-One Tutoring
+                  </Button>
+                  <Button 
+                    onClick={handleTeachingClick}
+                    variant="outline" 
+                    className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
+                  >
+                    Group Teaching
+                  </Button>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
