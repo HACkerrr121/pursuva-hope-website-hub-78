@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { GraduationCap, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
+import { GraduationCap, Clock, BookOpen, CheckCircle } from "lucide-react";
 import { useState } from "react";
 
 const TestPrepCourse = () => {
@@ -33,25 +33,17 @@ const TestPrepCourse = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Test Preparation</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Excel in standardized tests and competitive exams. Get personalized coaching for SAT/ACT, coding olympiads, and physics competitions.
+              Excel in standardized tests and competitive exams with our free preparation programs. Get personalized coaching from dedicated high school tutors.
             </p>
           </div>
 
           {/* Course Details Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="text-center">
               <CardContent className="p-6">
                 <Clock className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Duration</h3>
                 <p className="text-gray-700">8-16 weeks</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardContent className="p-6">
-                <Users className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Format</h3>
-                <p className="text-gray-700">1-on-1 & Groups</p>
               </CardContent>
             </Card>
             
@@ -66,8 +58,8 @@ const TestPrepCourse = () => {
             <Card className="text-center">
               <CardContent className="p-6">
                 <GraduationCap className="text-pursuva-orange w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Success Rate</h3>
-                <p className="text-gray-700">95%+ improvement</p>
+                <h3 className="font-bold mb-2">Cost</h3>
+                <p className="text-gray-700">100% Free</p>
               </CardContent>
             </Card>
           </div>
@@ -150,12 +142,12 @@ const TestPrepCourse = () => {
           <div className="text-center bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold mb-4">Ready to Ace Your Tests?</h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Join our test preparation program and achieve your target scores with expert guidance and proven strategies.
+              Join our free test preparation program and achieve your target scores with expert guidance from dedicated high school tutors.
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
                 <Button className="bg-pursuva-orange hover:bg-pursuva-orange/90">
-                  Enroll Now
+                  Enroll Now - Free!
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
@@ -174,7 +166,7 @@ const TestPrepCourse = () => {
                     variant="outline" 
                     className="w-full border-pursuva-orange text-pursuva-orange hover:bg-pursuva-orange hover:text-white"
                   >
-                    Group Teaching
+                    Group Classes
                   </Button>
                 </div>
               </DialogContent>

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Code, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
+import { Code, Clock, BookOpen, CheckCircle } from "lucide-react";
 import { useState } from "react";
 
 const JavaCourse = () => {
@@ -33,25 +33,17 @@ const JavaCourse = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Java Development</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Learn Java programming from the ground up. Master object-oriented design, enterprise development, and build robust applications that scale.
+              Learn Java programming from the ground up - completely free! Master object-oriented design and build robust applications with guidance from dedicated high school instructors.
             </p>
           </div>
 
           {/* Course Details Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="text-center">
               <CardContent className="p-6">
                 <Clock className="text-pursuva-teal w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Duration</h3>
                 <p className="text-gray-700">16 weeks</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardContent className="p-6">
-                <Users className="text-pursuva-teal w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Class Size</h3>
-                <p className="text-gray-700">Max 12 students</p>
               </CardContent>
             </Card>
             
@@ -66,8 +58,8 @@ const JavaCourse = () => {
             <Card className="text-center">
               <CardContent className="p-6">
                 <Code className="text-pursuva-teal w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Projects</h3>
-                <p className="text-gray-700">6+ enterprise projects</p>
+                <h3 className="font-bold mb-2">Cost</h3>
+                <p className="text-gray-700">100% Free</p>
               </CardContent>
             </Card>
           </div>
@@ -150,12 +142,12 @@ const JavaCourse = () => {
           <div className="text-center bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold mb-4">Ready to Master Java Development?</h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Join our comprehensive Java development course and learn to build enterprise-grade applications.
+              Join our free comprehensive Java development course and learn to build enterprise-grade applications with us!
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
                 <Button className="bg-pursuva-teal hover:bg-pursuva-teal/90">
-                  Enroll Now
+                  Enroll Now - Free!
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
@@ -174,7 +166,7 @@ const JavaCourse = () => {
                     variant="outline" 
                     className="w-full border-pursuva-teal text-pursuva-teal hover:bg-pursuva-teal hover:text-white"
                   >
-                    Group Teaching
+                    Group Classes
                   </Button>
                 </div>
               </DialogContent>

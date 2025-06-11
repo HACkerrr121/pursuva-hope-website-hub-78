@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 interface ContactInfo {
   icon: React.ReactNode;
@@ -74,19 +74,8 @@ const ContactSection = () => {
     {
       icon: <Mail className="text-pursuva-blue" />,
       title: "Email Us",
-      details: "info@pursuva.org",
-      link: "mailto:info@pursuva.org"
-    },
-    {
-      icon: <Phone className="text-pursuva-blue" />,
-      title: "Call Us",
-      details: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
-    },
-    {
-      icon: <MapPin className="text-pursuva-blue" />,
-      title: "Visit Us",
-      details: "123 Learning Drive, Boston, MA 02115"
+      details: "pursuvaedu@gmail.com",
+      link: "mailto:pursuvaedu@gmail.com"
     }
   ];
 
@@ -97,7 +86,7 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
           <div className="w-20 h-1 bg-gradient mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Have questions about our courses or interested in tutoring? Get in touch with us and we'll help you get started.
+            Have questions about our free courses or interested in tutoring? Get in touch with us and we'll help you get started.
           </p>
         </div>
         
@@ -107,27 +96,6 @@ const ContactSection = () => {
               {contactInfo.map((info, index) => (
                 <ContactInfoItem key={index} {...info} />
               ))}
-              
-              <div className="pt-4">
-                <h4 className="font-semibold text-lg mb-3">Connect With Us</h4>
-                <div className="flex space-x-4">
-                  {['facebook', 'twitter', 'instagram', 'linkedin'].map((platform) => (
-                    <a 
-                      key={platform} 
-                      href={`#${platform}`} 
-                      className="w-10 h-10 rounded-md bg-gray-100 flex items-center justify-center hover:bg-pursuva-blue hover:text-white transition-colors"
-                      aria-label={`Follow us on ${platform}`}
-                    >
-                      <img 
-                        src={`https://api.iconify.design/lucide/${platform}.svg`} 
-                        alt={platform} 
-                        width="18" 
-                        height="18" 
-                      />
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
           

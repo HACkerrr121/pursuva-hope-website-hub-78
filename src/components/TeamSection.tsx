@@ -43,26 +43,26 @@ const TeamSection = () => {
     {
       name: "Akshay Giri",
       position: "Co-Founder",
-      bio: "Passionate about education and technology, Akshay leads the vision and strategic direction of Pursuva's educational initiatives.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500"
+      bio: "A passionate high school student dedicated to making quality education accessible to everyone. Akshay helps lead Pursuva's mission to provide free tutoring and courses.",
+      image: "/lovable-uploads/7c10b8de-3b0c-418f-9e25-20cc7c4acc79.png"
     },
     {
       name: "Anand Kashyap",
       position: "Co-Founder",
-      bio: "With expertise in curriculum development and educational technology, Anand oversees program design and implementation.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+      bio: "High school student committed to educational equity. Anand works on curriculum development and ensuring our free programs reach students who need them most.",
+      image: "/lovable-uploads/c4ac9ada-e7c0-45cc-97d3-01d33bdb6c09.png"
     },
     {
       name: "Yu Zheng",
       position: "Lead Marketer",
-      bio: "Yu drives our outreach efforts and helps connect students with the educational opportunities that best fit their needs.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500"
+      bio: "High school student passionate about connecting students with free educational opportunities. Yu helps spread awareness about our programs and tutoring services.",
+      image: "/lovable-uploads/676188ce-142b-4d6b-9fa5-4ba5613d91e0.png"
     },
     {
       name: "Madhav Harikrishnan",
       position: "Lead Teacher",
-      bio: "An experienced educator specializing in mathematics and computer science, Madhav leads our teaching team and curriculum development.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500"
+      bio: "A dedicated high school student who specializes in mathematics and computer science. Madhav leads our teaching team and helps develop our free course content.",
+      image: "/lovable-uploads/3004350f-f616-4c31-ae32-a9bd92561e95.png"
     }
   ];
 
@@ -73,7 +73,7 @@ const TeamSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
           <div className="w-20 h-1 bg-gradient mx-auto mb-8"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Meet the dedicated professionals who lead our organization and drive our mission forward.
+            Meet the dedicated high school students who founded and lead our organization, committed to providing free education for all.
           </p>
         </div>
         

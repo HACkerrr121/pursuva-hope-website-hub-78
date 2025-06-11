@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Code, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
+import { Code, Clock, BookOpen, CheckCircle } from "lucide-react";
 import { useState } from "react";
 
 const PythonCourse = () => {
@@ -33,25 +33,17 @@ const PythonCourse = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Python Programming</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Master Python programming from fundamentals to advanced applications. Build real-world projects and develop the skills needed for modern software development.
+              Learn Python programming fundamentals completely free! Our high school instructors will guide you through essential concepts and hands-on projects.
             </p>
           </div>
 
           {/* Course Details Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="text-center">
               <CardContent className="p-6">
                 <Clock className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Duration</h3>
-                <p className="text-gray-700">12 weeks</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardContent className="p-6">
-                <Users className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Class Size</h3>
-                <p className="text-gray-700">Max 15 students</p>
+                <p className="text-gray-700">10 weeks</p>
               </CardContent>
             </Card>
             
@@ -59,15 +51,15 @@ const PythonCourse = () => {
               <CardContent className="p-6">
                 <BookOpen className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Level</h3>
-                <p className="text-gray-700">Beginner to Intermediate</p>
+                <p className="text-gray-700">Beginner Friendly</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
               <CardContent className="p-6">
                 <Code className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Projects</h3>
-                <p className="text-gray-700">5+ hands-on projects</p>
+                <h3 className="font-bold mb-2">Cost</h3>
+                <p className="text-gray-700">100% Free</p>
               </CardContent>
             </Card>
           </div>
@@ -75,71 +67,79 @@ const PythonCourse = () => {
           {/* Course Description */}
           <div className="grid lg:grid-cols-2 gap-12 mb-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6">What You'll Learn</h2>
+              <h2 className="text-3xl font-bold mb-6">Course Curriculum</h2>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Python Fundamentals</h4>
-                    <p className="text-gray-700">Variables, data types, control structures, and functions</p>
+                    <h4 className="font-semibold">Input / Output</h4>
+                    <p className="text-gray-700">Printing to console and getting user input</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Object-Oriented Programming</h4>
-                    <p className="text-gray-700">Classes, inheritance, polymorphism, and encapsulation</p>
+                    <h4 className="font-semibold">Variable Types & Arithmetic</h4>
+                    <p className="text-gray-700">Assignment, int, float, bool, printing variables, casting</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Data Structures & Algorithms</h4>
-                    <p className="text-gray-700">Lists, dictionaries, sets, and algorithm optimization</p>
+                    <h4 className="font-semibold">If Conditions and Loops</h4>
+                    <p className="text-gray-700">If statements, if-else conditions, and control flow</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Web Development</h4>
-                    <p className="text-gray-700">Flask/Django basics and API development</p>
+                    <h4 className="font-semibold">Lists & For Loops</h4>
+                    <p className="text-gray-700">Working with lists and iterating through them using for loops</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Data Analysis</h4>
-                    <p className="text-gray-700">NumPy, Pandas, and data visualization with Matplotlib</p>
+                    <h4 className="font-semibold">Functions & Modules</h4>
+                    <p className="text-gray-700">Creating functions and using modules like NumPy and Matplotlib</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="text-pursuva-blue w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Project Work</h4>
+                    <p className="text-gray-700">Hands-on project development and final presentations</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div>
-              <h2 className="text-3xl font-bold mb-6">Course Projects</h2>
+              <h2 className="text-3xl font-bold mb-6">Why Choose Our Course?</h2>
               <div className="space-y-6">
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Calculator Application</h4>
-                    <p className="text-gray-700">Build a GUI calculator using Tkinter with advanced mathematical functions.</p>
+                    <h4 className="font-bold mb-2">Completely Free</h4>
+                    <p className="text-gray-700">High-quality programming education at no cost - we believe learning should be accessible to everyone.</p>
                   </CardContent>
                 </Card>
                 
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Web Scraper</h4>
-                    <p className="text-gray-700">Create a web scraping tool to collect and analyze data from websites.</p>
+                    <h4 className="font-bold mb-2">Peer Learning</h4>
+                    <p className="text-gray-700">Learn from dedicated high school students who understand the challenges of learning programming.</p>
                   </CardContent>
                 </Card>
                 
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Personal Finance Tracker</h4>
-                    <p className="text-gray-700">Develop a complete application to track expenses and generate financial reports.</p>
+                    <h4 className="font-bold mb-2">Hands-on Projects</h4>
+                    <p className="text-gray-700">Build real projects and present your work to develop both coding and presentation skills.</p>
                   </CardContent>
                 </Card>
               </div>
@@ -150,12 +150,12 @@ const PythonCourse = () => {
           <div className="text-center bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold mb-4">Ready to Start Learning Python?</h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Join our comprehensive Python programming course and gain the skills you need to build amazing applications.
+              Join our free Python programming course and start your coding journey with us today!
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
                 <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90">
-                  Enroll Now
+                  Enroll Now - Free!
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
@@ -174,7 +174,7 @@ const PythonCourse = () => {
                     variant="outline" 
                     className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
                   >
-                    Group Teaching
+                    Group Classes
                   </Button>
                 </div>
               </DialogContent>
