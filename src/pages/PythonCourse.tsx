@@ -154,7 +154,7 @@ const PythonCourse = () => {
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90">
+                <Button size="lg" className="bg-pursuva-blue hover:bg-pursuva-blue/90">
                   Enroll Now - Free!
                 </Button>
               </DialogTrigger>
@@ -166,6 +166,7 @@ const PythonCourse = () => {
                   <Button 
                     onClick={handleTutoringClick}
                     className="w-full bg-pursuva-blue hover:bg-pursuva-blue/90"
+                    size="lg"
                   >
                     One-on-One Tutoring
                   </Button>
@@ -173,6 +174,7 @@ const PythonCourse = () => {
                     onClick={handleTeachingClick}
                     variant="outline" 
                     className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
+                    size="lg"
                   >
                     Group Classes
                   </Button>
