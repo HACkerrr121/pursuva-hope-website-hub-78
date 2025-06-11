@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRight, BookOpen, Users, GraduationCap } from "lucide-react";
@@ -34,10 +35,14 @@ const Hero = () => {
     },
   ];
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const scrollToPrograms = () => {
+    // Try to find programs section or navigate to programs page
+    const programsSection = document.getElementById('programs');
+    if (programsSection) {
+      programsSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If no programs section on current page, navigate to programs page
+      window.location.href = '/programs';
     }
   };
 
@@ -75,6 +80,7 @@ const Hero = () => {
                   <Button 
                     onClick={handleTutoringClick}
                     className="w-full bg-pursuva-blue hover:bg-pursuva-blue/90"
+                    size="lg"
                   >
                     One-on-One Tutoring
                   </Button>
@@ -82,6 +88,7 @@ const Hero = () => {
                     onClick={handleTeachingClick}
                     variant="outline" 
                     className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
+                    size="lg"
                   >
                     Group Classes
                   </Button>
@@ -93,7 +100,7 @@ const Hero = () => {
               size="lg" 
               variant="outline" 
               className="border-2 border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white transition-colors"
-              onClick={() => scrollToSection('programs')}
+              onClick={scrollToPrograms}
             >
               Explore Courses
             </Button>
