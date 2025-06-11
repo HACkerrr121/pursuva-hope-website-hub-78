@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,16 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleTutoringClick = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview", "_blank");
+    setIsModalOpen(false);
+  };
+
+  const handleTeachingClick = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSez6GFk-JoWeD_WPGyGXTR2jwdhXV8C8U-dQQJVxu1bnDRZZg/viewform?usp=preview", "_blank");
+    setIsModalOpen(false);
   };
 
   return (
@@ -77,9 +89,35 @@ const Navbar = () => {
           )}>
             Contact
           </Link>
-          <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white">
-            Enroll Now
-          </Button>
+          <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+            <DialogTrigger asChild>
+              <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white">
+                Enroll Now
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>Choose Your Learning Format</DialogTitle>
+              </DialogHeader>
+              <div className="space-y-4 pt-4">
+                <Button 
+                  onClick={handleTutoringClick}
+                  className="w-full bg-pursuva-blue hover:bg-pursuva-blue/90"
+                  size="lg"
+                >
+                  One-on-One Tutoring
+                </Button>
+                <Button 
+                  onClick={handleTeachingClick}
+                  variant="outline" 
+                  className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
+                  size="lg"
+                >
+                  Group Classes
+                </Button>
+              </div>
+            </DialogContent>
+          </Dialog>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -117,9 +155,35 @@ const Navbar = () => {
               <Link to="/contact" className="text-gray-700 hover:text-pursuva-blue transition-colors" onClick={toggleMobileMenu}>
                 Contact
               </Link>
-              <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white w-full">
-                Enroll Now
-              </Button>
+              <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+                <DialogTrigger asChild>
+                  <Button className="bg-pursuva-blue hover:bg-pursuva-blue/90 text-white w-full">
+                    Enroll Now
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogHeader>
+                    <DialogTitle>Choose Your Learning Format</DialogTitle>
+                  </DialogHeader>
+                  <div className="space-y-4 pt-4">
+                    <Button 
+                      onClick={handleTutoringClick}
+                      className="w-full bg-pursuva-blue hover:bg-pursuva-blue/90"
+                      size="lg"
+                    >
+                      One-on-One Tutoring
+                    </Button>
+                    <Button 
+                      onClick={handleTeachingClick}
+                      variant="outline" 
+                      className="w-full border-pursuva-blue text-pursuva-blue hover:bg-pursuva-blue hover:text-white"
+                      size="lg"
+                    >
+                      Group Classes
+                    </Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </nav>
           </div>
         </div>
