@@ -53,7 +53,7 @@ const ImpactSection = () => {
           
           <FeatureCard
             title="Expert Instructors"
-            description="Learn from experienced educators and industry professionals who bring real-world experience into their teaching."
+            description="Learn from qualified high schoolers who bring passion and fresh perspectives to their teaching, making complex concepts accessible and engaging."
             icon={<GraduationCap className="text-white w-6 h-6" />}
             iconBg="bg-pursuva-teal"
           />
