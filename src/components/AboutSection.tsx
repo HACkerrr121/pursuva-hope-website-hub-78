@@ -73,7 +73,7 @@ const AboutSection = () => {
                 Founded by passionate educators and tech professionals, Pursuva began with a simple goal: to bridge the gap between traditional education and the fast-evolving skills needed in today's technology-driven world.
               </p>
               <p className="text-gray-700 mb-4">
-                Our name "Pursuva" represents our commitment to helping students pursue their educational goals. The colorful "M" in our logo symbolizes the diverse pathways to learning and growth that we support.
+                Our name "Pursuva" represents our commitment to helping students pursue their educational goals.
               </p>
               <p className="text-gray-700">
                 Today, we offer comprehensive courses in Python, Java, and Mathematics, along with specialized tutoring in programming, SAT/ACT preparation, coding competitions, and Physics. Our curriculum is continuously updated to reflect industry standards and academic requirements.
