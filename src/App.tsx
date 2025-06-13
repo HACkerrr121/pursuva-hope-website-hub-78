@@ -11,6 +11,9 @@ import PythonCourse from "./pages/PythonCourse";
 import JavaCourse from "./pages/JavaCourse";
 import MathCourse from "./pages/MathCourse";
 import TestPrepCourse from "./pages/TestPrepCourse";
+import PhysicsTutoring from "./pages/PhysicsTutoring";
+import CompetitionTutoring from "./pages/CompetitionTutoring";
+import MathTutoring from "./pages/MathTutoring";
 import Impact from "./pages/Impact";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
@@ -32,6 +35,9 @@ const App = () => (
           <Route path="/programs/java" element={<JavaCourse />} />
           <Route path="/programs/mathematics" element={<MathCourse />} />
           <Route path="/programs/test-prep" element={<TestPrepCourse />} />
+          <Route path="/programs/physics" element={<PhysicsTutoring />} />
+          <Route path="/programs/competition" element={<CompetitionTutoring />} />
+          <Route path="/programs/math-tutoring" element={<MathTutoring />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />

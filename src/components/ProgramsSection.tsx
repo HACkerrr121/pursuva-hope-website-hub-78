@@ -61,11 +61,11 @@ const ProgramsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Courses & Tutoring</h2>
           <div className="w-20 h-1 bg-gradient mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            We offer free programming courses and specialized tutoring services in physics and competitive programming.
+            We offer free programming courses and specialized tutoring services in physics, mathematics, and competitive programming.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           <CourseCard 
             title="Python Programming Course" 
             description="Learn the fundamentals of Python programming, data structures, and algorithms. Perfect for beginners looking to build practical applications through our structured course."
@@ -90,7 +90,16 @@ const ProgramsSection = () => {
             icon={<Zap className="text-pursuva-purple w-6 h-6" />}
             color="text-pursuva-purple border-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-colors"
             bgColor="bg-pursuva-purple/10"
-            navigateTo="/programs/mathematics"
+            navigateTo="/programs/physics"
+          />
+          
+          <CourseCard 
+            title="Math Tutoring" 
+            description="Comprehensive math tutoring covering algebra, calculus, statistics, and more. Develop strong problem-solving skills and prepare for advanced studies."
+            icon={<Calculator className="text-pursuva-green w-6 h-6" />}
+            color="text-pursuva-green border-pursuva-green hover:bg-pursuva-green hover:text-white transition-colors"
+            bgColor="bg-pursuva-green/10"
+            navigateTo="/programs/math-tutoring"
           />
           
           <CourseCard 
@@ -99,14 +108,14 @@ const ProgramsSection = () => {
             icon={<Trophy className="text-pursuva-orange w-6 h-6" />}
             color="text-pursuva-orange border-pursuva-orange hover:bg-pursuva-orange hover:text-white transition-colors"
             bgColor="bg-pursuva-orange/10"
-            navigateTo="/programs/test-prep"
+            navigateTo="/programs/competition"
           />
         </div>
         
         <div className="mt-12 p-6 bg-white rounded-lg shadow-md text-center border border-gray-100">
           <h3 className="text-2xl font-bold mb-4">Looking for personalized learning?</h3>
           <p className="mb-6 max-w-2xl mx-auto text-gray-700">
-            Our tutoring services offer one-on-one guidance in Python, Java, Physics, and Competitive Programming (USACO).
+            Our tutoring services offer one-on-one guidance in Python, Java, Physics, Mathematics, and Competitive Programming (USACO).
             Contact us to schedule a session with our expert tutors.
           </p>
           <Button 
