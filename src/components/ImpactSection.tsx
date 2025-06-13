@@ -43,7 +43,7 @@ const ImpactSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6">
           <FeatureCard
             title="Hands-On Learning"
             description="Our courses emphasize practical application through projects and exercises that reinforce concepts and build real-world skills."
@@ -71,44 +71,6 @@ const ImpactSection = () => {
             icon={<Brain className="text-white w-6 h-6" />}
             iconBg="bg-pursuva-orange"
           />
-        </div>
-
-        <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-          <div className="lg:flex">
-            <div className="lg:w-1/2 flex items-center justify-center p-8">
-              <img 
-                src="/lovable-uploads/3b475287-c758-4331-9fd2-9d99007620f8.png" 
-                alt="Pursuva Logo" 
-                className="h-72 w-auto"
-              />
-            </div>
-            <div className="lg:w-1/2 p-6">
-              <h3 className="text-2xl font-bold mb-4">Student Success Stories</h3>
-              
-              <div className="space-y-4">
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="italic text-gray-700 mb-2">
-                    "The Python course at Pursuva made programming accessible and fun. The instructors took time to explain complex concepts in simple terms, and the hands-on projects helped me build confidence in my coding abilities."
-                  </p>
-                  <p className="font-medium text-sm">- Alex, Python Course Student</p>
-                </div>
-                
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="italic text-gray-700 mb-2">
-                    "My SAT scores improved significantly after just one month of tutoring with Pursuva. The personalized study plan and practice tests were exactly what I needed to succeed."
-                  </p>
-                  <p className="font-medium text-sm">- Morgan, SAT Prep Student</p>
-                </div>
-                
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="italic text-gray-700 mb-2">
-                    "The Coding Olympiad preparation was rigorous but incredibly rewarding. My tutor's guidance helped me develop advanced algorithm skills and I placed in the top 10 in my regional competition."
-                  </p>
-                  <p className="font-medium text-sm">- Jamie, Coding Olympiad Participant</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
