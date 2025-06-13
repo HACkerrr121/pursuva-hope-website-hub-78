@@ -58,58 +58,68 @@ const ProgramsSection = () => {
     <section id="programs" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Courses & Tutoring</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Programs</h2>
           <div className="w-20 h-1 bg-gradient mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             We offer free programming courses and specialized tutoring services in physics, mathematics, and competitive programming.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-          <CourseCard 
-            title="Python Programming Course" 
-            description="Learn the fundamentals of Python programming, data structures, and algorithms. Perfect for beginners looking to build practical applications through our structured course."
-            icon={<Code className="text-pursuva-blue w-6 h-6" />}
-            color="text-pursuva-blue border-pursuva-blue hover:bg-pursuva-blue hover:text-white transition-colors"
-            bgColor="bg-pursuva-blue/10"
-            navigateTo="/programs/python"
-          />
-          
-          <CourseCard 
-            title="Java Development Course" 
-            description="Master Java programming fundamentals and object-oriented design through our comprehensive course. Build desktop apps and learn software engineering principles."
-            icon={<Code className="text-pursuva-teal w-6 h-6" />}
-            color="text-pursuva-teal border-pursuva-teal hover:bg-pursuva-teal hover:text-white transition-colors"
-            bgColor="bg-pursuva-teal/10"
-            navigateTo="/programs/java"
-          />
-          
-          <CourseCard 
-            title="Physics Tutoring" 
-            description="Get personalized tutoring in physics concepts, problem-solving techniques, and exam preparation. Perfect for high school and AP physics students."
-            icon={<Zap className="text-pursuva-purple w-6 h-6" />}
-            color="text-pursuva-purple border-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-colors"
-            bgColor="bg-pursuva-purple/10"
-            navigateTo="/programs/physics"
-          />
-          
-          <CourseCard 
-            title="Math Tutoring" 
-            description="Comprehensive math tutoring covering algebra, calculus, statistics, and more. Develop strong problem-solving skills and prepare for advanced studies."
-            icon={<Calculator className="text-pursuva-green w-6 h-6" />}
-            color="text-pursuva-green border-pursuva-green hover:bg-pursuva-green hover:text-white transition-colors"
-            bgColor="bg-pursuva-green/10"
-            navigateTo="/programs/math-tutoring"
-          />
-          
-          <CourseCard 
-            title="Competition Tutoring" 
-            description="USACO, coding olympiads, and other competitive programming contests. Develop advanced algorithm skills and excel in programming competitions."
-            icon={<Trophy className="text-pursuva-orange w-6 h-6" />}
-            color="text-pursuva-orange border-pursuva-orange hover:bg-pursuva-orange hover:text-white transition-colors"
-            bgColor="bg-pursuva-orange/10"
-            navigateTo="/programs/competition"
-          />
+        {/* Courses Section */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-center mb-8">Courses</h3>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <CourseCard 
+              title="Python Programming Course" 
+              description="Learn the fundamentals of Python programming, data structures, and algorithms. Perfect for beginners looking to build practical applications through our structured course."
+              icon={<Code className="text-pursuva-blue w-6 h-6" />}
+              color="text-pursuva-blue border-pursuva-blue hover:bg-pursuva-blue hover:text-white transition-colors"
+              bgColor="bg-pursuva-blue/10"
+              navigateTo="/programs/python"
+            />
+            
+            <CourseCard 
+              title="Java Development Course" 
+              description="Master Java programming fundamentals and object-oriented design through our comprehensive course. Build desktop apps and learn software engineering principles."
+              icon={<Code className="text-pursuva-teal w-6 h-6" />}
+              color="text-pursuva-teal border-pursuva-teal hover:bg-pursuva-teal hover:text-white transition-colors"
+              bgColor="bg-pursuva-teal/10"
+              navigateTo="/programs/java"
+            />
+          </div>
+        </div>
+
+        {/* Tutoring Services Section */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-center mb-8">Tutoring Services</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <CourseCard 
+              title="Physics Tutoring" 
+              description="Get personalized tutoring in physics concepts, problem-solving techniques, and exam preparation. Perfect for high school and AP physics students."
+              icon={<Zap className="text-pursuva-purple w-6 h-6" />}
+              color="text-pursuva-purple border-pursuva-purple hover:bg-pursuva-purple hover:text-white transition-colors"
+              bgColor="bg-pursuva-purple/10"
+              navigateTo="/programs/physics"
+            />
+            
+            <CourseCard 
+              title="Math Tutoring" 
+              description="Comprehensive math tutoring covering algebra, calculus, statistics, and more. Develop strong problem-solving skills and prepare for advanced studies."
+              icon={<Calculator className="text-pursuva-green w-6 h-6" />}
+              color="text-pursuva-green border-pursuva-green hover:bg-pursuva-green hover:text-white transition-colors"
+              bgColor="bg-pursuva-green/10"
+              navigateTo="/programs/math-tutoring"
+            />
+            
+            <CourseCard 
+              title="Competition Tutoring" 
+              description="USACO, coding olympiads, and other competitive programming contests. Develop advanced algorithm skills and excel in programming competitions."
+              icon={<Trophy className="text-pursuva-orange w-6 h-6" />}
+              color="text-pursuva-orange border-pursuva-orange hover:bg-pursuva-orange hover:text-white transition-colors"
+              bgColor="bg-pursuva-orange/10"
+              navigateTo="/programs/competition"
+            />
+          </div>
         </div>
         
         <div className="mt-12 p-6 bg-white rounded-lg shadow-md text-center border border-gray-100">
