@@ -4,11 +4,13 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Calculator, Clock, Users, BookOpen, CheckCircle } from "lucide-react";
+import { Calculator, Clock, Users, BookOpen, CheckCircle, Trophy, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const MathTutoring = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleTutoringClick = () => {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSeODtgerfFvnWfWRJb_ulPg_hJTKpP3qfrkrMRas8Fm3ZFHYg/viewform?usp=preview", "_blank");
@@ -18,6 +20,10 @@ const MathTutoring = () => {
   const handleTeachingClick = () => {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSez6GFk-JoWeD_WPGyGXTR2jwdhXV8C8U-dQQJVxu1bnDRZZg/viewform?usp=preview", "_blank");
     setIsModalOpen(false);
+  };
+
+  const handleCompetitionRedirect = () => {
+    navigate("/programs/competition");
   };
 
   return (
@@ -35,6 +41,34 @@ const MathTutoring = () => {
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Master mathematical concepts from algebra to calculus. Build strong problem-solving skills and prepare for advanced studies in STEM fields.
             </p>
+          </div>
+
+          {/* Competition Redirect Box */}
+          <div className="mb-12">
+            <Card className="bg-gradient-to-r from-pursuva-orange/10 to-pursuva-orange/5 border-pursuva-orange/20">
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-pursuva-orange/20 rounded-lg flex items-center justify-center mr-4">
+                      <Trophy className="text-pursuva-orange w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-1">Looking for Math Competition Preparation?</h3>
+                      <p className="text-gray-700">
+                        For AMC, AIME, Math Olympiad, and other math competitions, visit our specialized Competition Tutoring page.
+                      </p>
+                    </div>
+                  </div>
+                  <Button 
+                    onClick={handleCompetitionRedirect}
+                    className="bg-pursuva-orange hover:bg-pursuva-orange/90 flex items-center gap-2"
+                  >
+                    Competition Tutoring
+                    <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Course Details Grid */}
