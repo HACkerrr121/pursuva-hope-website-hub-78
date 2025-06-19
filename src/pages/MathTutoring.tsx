@@ -122,22 +122,6 @@ const MathTutoring = () => {
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-green w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Calculus</h4>
-                    <p className="text-gray-700">Limits, derivatives, integrals, and applications</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-green w-6 h-6 mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold">Statistics & Probability</h4>
-                    <p className="text-gray-700">Data analysis, distributions, and statistical inference</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-green w-6 h-6 mt-1 mr-3 flex-shrink-0" />
-                  <div>
                     <h4 className="font-semibold">Geometry & Trigonometry</h4>
                     <p className="text-gray-700">Shapes, angles, trigonometric functions, and proofs</p>
                   </div>
