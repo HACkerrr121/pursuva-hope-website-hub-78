@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -113,40 +114,56 @@ const PhysicsTutoring = () => {
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Mechanics</h4>
-                    <p className="text-gray-700">Motion, forces, energy, momentum, and rotational dynamics</p>
+                    <h4 className="font-semibold">Kinematics</h4>
+                    <p className="text-gray-700">Motion in one and two dimensions, velocity, acceleration, and projectile motion</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Electricity & Magnetism</h4>
-                    <p className="text-gray-700">Electric fields, circuits, magnetic fields, and electromagnetic induction</p>
+                    <h4 className="font-semibold">Work & Energy</h4>
+                    <p className="text-gray-700">Kinetic and potential energy, work-energy theorem, and conservation of energy</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Waves & Optics</h4>
-                    <p className="text-gray-700">Sound waves, light, interference, and geometric optics</p>
+                    <h4 className="font-semibold">Fluids</h4>
+                    <p className="text-gray-700">Pressure, buoyancy, fluid flow, and Bernoulli's principle</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Thermodynamics</h4>
-                    <p className="text-gray-700">Heat, temperature, gas laws, and thermal processes</p>
+                    <h4 className="font-semibold">Forces</h4>
+                    <p className="text-gray-700">Newton's laws, friction, tension, and force analysis</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Problem Solving</h4>
-                    <p className="text-gray-700">Analytical thinking and physics problem-solving strategies</p>
+                    <h4 className="font-semibold">Momentum</h4>
+                    <p className="text-gray-700">Conservation of momentum, impulse, and collision analysis</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Torque</h4>
+                    <p className="text-gray-700">Rotational motion, angular momentum, and rotational dynamics</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <CheckCircle className="text-pursuva-purple w-6 h-6 mt-1 mr-3 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Oscillations</h4>
+                    <p className="text-gray-700">Simple harmonic motion, pendulums, and wave fundamentals</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +175,7 @@ const PhysicsTutoring = () => {
                 <Card>
                   <CardContent className="p-6">
                     <h4 className="font-bold mb-2">AP Physics Prep</h4>
-                    <p className="text-gray-700">Comprehensive preparation for AP Physics 1, 2, C: Mechanics, and C: Electricity & Magnetism.</p>
+                    <p className="text-gray-700">Comprehensive preparation for AP Physics 1 and 2 exams with focus on mechanics and fundamental concepts.</p>
                   </CardContent>
                 </Card>
                 
