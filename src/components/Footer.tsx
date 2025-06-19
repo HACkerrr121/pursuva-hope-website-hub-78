@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
@@ -26,24 +25,6 @@ const Footer = () => {
                 Email: <a href="mailto:pursuvaedu@gmail.com" className="text-pursuva-blue hover:underline">pursuvaedu@gmail.com</a>
               </p>
             </div>
-            <div className="flex space-x-3">
-              {['facebook', 'twitter', 'instagram', 'linkedin'].map((platform) => (
-                <a 
-                  key={platform} 
-                  href={`#${platform}`} 
-                  className="w-8 h-8 rounded-md bg-gray-200 flex items-center justify-center hover:bg-pursuva-blue hover:text-white transition-colors"
-                  aria-label={`Follow us on ${platform}`}
-                >
-                  <img 
-                    src={`https://api.iconify.design/lucide/${platform}.svg`} 
-                    alt={platform} 
-                    width="16" 
-                    height="16" 
-                    className="text-current"
-                  />
-                </a>
-              ))}
-            </div>
           </div>
           
           <div>
@@ -68,16 +49,6 @@ const Footer = () => {
                 <Link to="/programs/test-prep" className="text-gray-600 hover:text-pursuva-blue transition-colors">
                   Test Preparation
                 </Link>
-              </li>
-              <li>
-                <a href="#data-structures" className="text-gray-600 hover:text-pursuva-blue transition-colors">
-                  Data Structures
-                </a>
-              </li>
-              <li>
-                <a href="#algorithms" className="text-gray-600 hover:text-pursuva-blue transition-colors">
-                  Algorithms
-                </a>
               </li>
             </ul>
           </div>
@@ -175,11 +146,6 @@ const Footer = () => {
                 <Link to="/contact" className="text-gray-600 hover:text-pursuva-blue transition-colors">
                   Contact Us
                 </Link>
-              </li>
-              <li>
-                <a href="#faqs" className="text-gray-600 hover:text-pursuva-blue transition-colors">
-                  FAQs
-                </a>
               </li>
             </ul>
           </div>
