@@ -39,7 +39,7 @@ const JavaCourse = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Java Development</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Learn Java programming from the ground up - completely free! Master object-oriented design and build robust applications with guidance from dedicated high school instructors.
+              Master Java programming through hands-on projects - completely free! Learn object-oriented design and build practical applications with guidance from dedicated high school instructors.
             </p>
           </div>
 
@@ -77,7 +77,7 @@ const JavaCourse = () => {
               <CardContent className="p-6">
                 <Clock className="text-pursuva-teal w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Duration</h3>
-                <p className="text-gray-700">16 weeks</p>
+                <p className="text-gray-700">8 weeks</p>
               </CardContent>
             </Card>
             
@@ -85,7 +85,7 @@ const JavaCourse = () => {
               <CardContent className="p-6">
                 <BookOpen className="text-pursuva-teal w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Level</h3>
-                <p className="text-gray-700">Beginner to Advanced</p>
+                <p className="text-gray-700">Beginner to Intermediate</p>
               </CardContent>
             </Card>
             
@@ -115,23 +115,23 @@ const JavaCourse = () => {
                   <CheckCircle className="text-pursuva-teal w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Object-Oriented Programming</h4>
-                    <p className="text-gray-700">Advanced OOP concepts, design patterns, and SOLID principles</p>
+                    <p className="text-gray-700">Classes, objects, inheritance, and encapsulation principles</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-teal w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Using GitHub</h4>
-                    <p className="text-gray-700">Version control, repositories, commits, and collaborative development</p>
+                    <h4 className="font-semibold">String Manipulation</h4>
+                    <p className="text-gray-700">Advanced string processing and text manipulation techniques</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-teal w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Working with Style</h4>
-                    <p className="text-gray-700">Code formatting, best practices, and professional development standards</p>
+                    <h4 className="font-semibold">GUI Development</h4>
+                    <p className="text-gray-700">Creating interactive graphical user interfaces with Java Swing</p>
                   </div>
                 </div>
               </div>
@@ -142,22 +142,22 @@ const JavaCourse = () => {
               <div className="space-y-6">
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Banking System</h4>
-                    <p className="text-gray-700">Build a complete banking application with account management and transaction processing.</p>
+                    <h4 className="font-bold mb-2">String Toolbox Lab</h4>
+                    <p className="text-gray-700">Master string manipulation with hands-on exercises covering parsing, formatting, and text processing algorithms.</p>
                   </CardContent>
                 </Card>
                 
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">E-commerce Platform</h4>
-                    <p className="text-gray-700">Develop a full-stack e-commerce solution with Spring Boot and database integration.</p>
+                    <h4 className="font-bold mb-2">Calculator Project</h4>
+                    <p className="text-gray-700">Build a fully functional calculator application implementing mathematical operations and user input handling.</p>
                   </CardContent>
                 </Card>
                 
                 <Card>
                   <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Task Management System</h4>
-                    <p className="text-gray-700">Create a collaborative project management tool with user authentication and real-time updates.</p>
+                    <h4 className="font-bold mb-2">Graphical Paint Application</h4>
+                    <p className="text-gray-700">Create a Microsoft Paint-style drawing application with tools for shapes, colors, and image manipulation.</p>
                   </CardContent>
                 </Card>
               </div>
@@ -168,7 +168,7 @@ const JavaCourse = () => {
           <div className="text-center bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold mb-4">Ready to Master Java Development?</h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Join our free comprehensive Java development course and learn to build enterprise-grade applications with us!
+              Join our free 8-week Java development course and build three exciting projects while mastering programming fundamentals!
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
