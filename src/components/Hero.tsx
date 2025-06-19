@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { ArrowRight, BookOpen, Users, GraduationCap } from "lucide-react";
+import { ArrowRight, BookOpen, Users } from "lucide-react";
 import { useState } from "react";
 
 const Hero = () => {
@@ -27,11 +26,6 @@ const Hero = () => {
       label: "Expert Tutors",
       number: "5+",
       icon: <Users className="text-pursuva-purple w-8 h-8" />,
-    },
-    {
-      label: "Students Impacted",
-      number: "100+",
-      icon: <GraduationCap className="text-pursuva-teal w-8 h-8" />,
     },
   ];
 
