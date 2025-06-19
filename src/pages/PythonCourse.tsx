@@ -77,7 +77,7 @@ const PythonCourse = () => {
               <CardContent className="p-6">
                 <Clock className="text-pursuva-blue w-8 h-8 mx-auto mb-4" />
                 <h3 className="font-bold mb-2">Duration</h3>
-                <p className="text-gray-700">10 weeks</p>
+                <p className="text-gray-700">8 weeks</p>
               </CardContent>
             </Card>
             
