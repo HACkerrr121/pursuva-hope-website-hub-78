@@ -122,24 +122,16 @@ const JavaCourse = () => {
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-teal w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Spring Framework</h4>
-                    <p className="text-gray-700">Spring Boot, dependency injection, and RESTful APIs</p>
+                    <h4 className="font-semibold">Using GitHub</h4>
+                    <p className="text-gray-700">Version control, repositories, commits, and collaborative development</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <CheckCircle className="text-pursuva-teal w-6 h-6 mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Database Integration</h4>
-                    <p className="text-gray-700">JDBC, JPA/Hibernate, and database design</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <CheckCircle className="text-pursuva-teal w-6 h-6 mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold">Testing & Deployment</h4>
-                    <p className="text-gray-700">JUnit testing, Maven/Gradle, and application deployment</p>
+                    <h4 className="font-semibold">Working with Style</h4>
+                    <p className="text-gray-700">Code formatting, best practices, and professional development standards</p>
                   </div>
                 </div>
               </div>
